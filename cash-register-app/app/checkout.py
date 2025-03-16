@@ -3,7 +3,7 @@
 # 2. Apply discounts dynamically.
 # 3. Calculate the correct total price.
 
-from app.products import load_products_from_csv
+from products import load_products_from_csv
 
 class Checkout:
     def __init__(self, products):
@@ -41,7 +41,7 @@ class Checkout:
             # Percentage discount
             elif quantity >= product["product_discount_minimum"] and product["discount_type"] == "percentage_discount":
                 total_discount += product["product_price"] * product["product_discount_percentage"] * quantity
-        print(total_discount)
+
         return total_discount
 
     def calculate_total(self):
