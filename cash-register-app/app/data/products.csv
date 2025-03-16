@@ -1,4 +1,5 @@
-code,name,price
-GR1,Green Tea,3.11
-SR1,Strawberries,5.00
-CF1,Coffee,11.23
+product_code,product_name,product_price,product_discount_price,product_discount_percentage,product_discount_free_quantity,product_discount_minimum,discount_active
+GR1,Green Tea,3.11,,,1,2,free_item_discount
+SR1,Strawberries,5.0,4.5,,,,price_discount
+CF1,Coffee,11.23,,0.67,,,percentage_discount
+HF1,Water,1,,,,,none
